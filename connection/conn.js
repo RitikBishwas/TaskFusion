@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
-require('dotenv').config(); // Add this line to load .env file
 
 const conn = async (req, res) => {
-    try {
-        await mongoose.connect(process.env.MONGODB_URI).then(() => {
-            console.log("Connected");
-        });
-    } catch (error) {
-        res.status(400).json({
-            message: "Not Connected",
-        });
-    }
+  try {
+    await mongoose
+      .connect(
+      "mongodb+srv://bishwasritik07:7PEDXstDWU1OifPK@cluster0.arjcq4l.mongodb.net/todo-manager"
+      )
+      .then(() => {
+        console.log("Connected");
+      });
+  } catch (error) {
+    console.log(error);
+  }
 };
-
 conn();
