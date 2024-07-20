@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const conn = async (req, res) => {
+const conn = async () => {
   try {
     await mongoose
-      .connect(
-      "mongodb+srv://bishwasritik07:7PEDXstDWU1OifPK@cluster0.arjcq4l.mongodb.net/todo-manager"
-      )
+      .connect(process.env.MONGODB_URI)
       .then(() => {
         console.log("Connected");
       });
@@ -13,4 +12,5 @@ const conn = async (req, res) => {
     console.log(error);
   }
 };
+
 conn();
