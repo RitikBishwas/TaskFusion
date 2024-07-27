@@ -19,7 +19,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <b><RiContactsBook2Fill /> todo</b>
+            <b><RiContactsBook2Fill /> TaskFusion</b>
           </Link>
           <button
             className="navbar-toggler"
@@ -41,7 +41,7 @@ const NavBar = () => {
                 <Link className="nav-link active" aria-current="page" to="/about">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/todo">Todo</Link>
+                <Link className="nav-link active" aria-current="page" to="/todo">TaskFusion</Link>
               </li>
               {!isLoggedIn && (
                 <>

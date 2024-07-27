@@ -6,7 +6,7 @@ const About=()=>{
     <div className='container'>
       <div className='d-flex'>
     <h1>About Us</h1></div><p>
-    Welcome to our To-Do App!<br/>
+    Welcome to our TaskFusion App!<br/>
     </p>
 
   <p>At the heart of our mission is a simple, yet powerful goal: to help you stay organized and efficient in your daily tasks. Our app is designed with you in mind, providing an intuitive and seamless experience that transforms the way you manage your to-dos.
